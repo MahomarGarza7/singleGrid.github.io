@@ -296,5 +296,117 @@ body{
 
 
 */
+@media (max-width:625px){
+   
+    
+    .conteiner{
+       max-width: 375px;
+        height: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:40% 35% 35%;
+        grid-template-areas: 
+        "sec1"
+        "art1"
+        "art2";
+    }
+
+    
+    .sec1{
+        grid-area: sec1;
+        height: 100%;
+        width: 100%;
+        
+        .title1{
+            height: auto;
+            
+            
+
+        }
+        
+        
+        .title1__1{
+            height: auto;
+           
+
+        }
+        .paragrap{
+            height: auto;
+            line-height: 28px;
+        }
+    }
+    .art1{
+        grid-area: art1;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 10px 20px 0 20px;
+    
+        .title2{
+            
+    
+        }
+        .paragrap__1{
+            font-size: 40px;
+            font-weight:900;
+            display: flex;
+            align-items: center;
+            height: auto;
+            padding-top: 30px;
+            
+        }
+        .paragrap__1::after{
+            content: "per month";
+            font-size: 15px;
+            padding-left: 10px;
+            font-weight: 100;
+            color: var(--Light-Gray);
+            display: flex;
+            align-items: center;
+            
+        }
+        .paragrap__2{
+            height:30px;
+            width: 100%;
+            text-align: justify;
+            font-weight: 100;
+            font-size: 20px;
+            color: var(--Light-Gray);
+            margin-bottom: 25px;
+            margin-top: 0;
+            
+        
+        }
+        .cta:hover{
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .cta{
+            
+            display: block;
+            text-decoration: none;
+            background-color: var(--Bright_ellow);
+            width: 100;
+            height: 60px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 7px;  
+            color: #fff;   
+            text-transform: uppercase; 
+            box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.426);
+        }
+    
+    }
+    
+    
+    .art2{
+    grid-area: art2;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+    }
+}
+    
+
 
 
